@@ -1,13 +1,95 @@
-🚀 Me-API PlaygroundA professional full-stack MERN application developed as an intern assessment. This project serves as a "Programmable Portfolio" that exposes candidate information via a RESTful API and a minimal React frontend.🔗 Live DeploymentFrontend (UI): [Yahan Vercel ka Link dalo]Backend (API): [Yahan Render ka Link dalo]Resume: [Yahan apne Resume ka Google Drive link dalo]🏗️ Architecture OverviewProject ko MVC (Model-View-Controller) pattern par design kiya gaya hai taaki code maintainable aur scalable rahe.Frontend: React.js + Tailwind CSS (Minimal & Search-focused UI).Backend: Node.js & Express.js using ES Modules (type: "module").Database: MongoDB Atlas (NoSQL) with a structured schema.🛠️ Tech Stack & Implementation DetailsFeatureTechnologyBackendNode.js, Express.jsDatabaseMongoDB, MongooseFrontendReact, Axios, Tailwind CSSAPI TestingThunder Client / PostmanDeploymentVercel (Frontend), Render (Backend)📡 API Endpoints & Request FlowMaine professional versioning (/api/v1) ka use kiya hai. Niche endpoints ki details di gayi hain:1. Health CheckGET /api/v1/user/healthResponse: 200 OKGoal: Backend liveness verify karne ke liye.2. Candidate ProfileGET /api/v1/user/profileLogic: Profile.findOne() call karke MongoDB se real-time data fetch karta hai.3. Skill-Based Project Search (Requirement #1b)GET /api/v1/user/projects?skill=pythonLogic: Controller mein .filter() method ka use karke description aur title mein keyword search karta hai.4. Update/Create ProfilePUT /api/v1/user/updateProfileLogic: upsert: true query ka use kiya gaya hai. Agar profile exist nahi karti toh naya document create hota hai, warna existing update ho jata hai.🚀 Local Setup & InstallationPrerequisitesNode.js installedMongoDB Atlas account (or Local MongoDB)Step 1: Clone RepositoryBashgit clone [APNA_GITHUB_REPO_LINK]
+🚀 Me-API Playground
+A professional full-stack (MERN) assessment project that exposes my profile and projects via a custom REST API and a responsive React frontend.
+
+🔗 Live Links
+Frontend (UI): [Yahan Vercel wala link dalo]
+
+Backend (API): [Yahan Render wala link dalo]
+
+GitHub Repository: [Yahan GitHub wala link dalo]
+
+🏗️ Architecture & Tech Stack
+This project follows a Monorepo structure with a clear separation between Backend and Frontend.
+
+Frontend: React.js, Tailwind CSS, Axios.
+
+Backend: Node.js, Express.js (ES Modules), Mongoose.
+
+Database: MongoDB Atlas (Cloud).
+
+Architecture: Model-View-Controller (MVC) pattern.
+
+📡 API Endpoints (For Testing)
+You can test the API using curl, Postman, or Thunder Client.
+
+1. Health Check
+GET /api/v1/user/health
+
+Purpose: To check if the server is live.
+
+Success Response: {"status": "UP", "message": "Server is healthy"}
+
+2. View Profile
+GET /api/v1/user/profile 
+
+Purpose: Fetches all candidate data including skills, projects, and social links.
+
+3. Search Projects by Skill
+GET /api/v1/user/projects?skill=React
+
+Purpose: Filters projects where the title or description contains the searched skill keyword.
+
+4. Update/Create Profile
+PUT /api/v1/user/updateProfile
+
+Purpose: Updates existing profile or creates a new one if it doesn't exist (Upsert logic).
+
+🛠️ Local Setup Instructions
+Clone the repo:
+
+Bash
+git clone [APNA GITHUB REPO LINK DALO]
 cd me-api-playground
-Step 2: Backend SetupBashcd backend
-npm install
-# Create a .env file and add:
-# MONGO_URI=your_mongodb_connection_string
-# PORT=8000
-npm start
-Step 3: Frontend SetupBashcd ../frontend
-npm install
-# Ensure API_BASE in App.jsx points to http://localhost:8000/api/v1/user
-npm run dev
-📝 Known LimitationsAuthentication currently not implemented (Nice-to-have).Single-profile management system (Designed for a single candidate).👨‍💻 Developed ByNaveed Khan B.Tech 3rd Year Student & MERN Stack Enthusiast
+Backend Setup:
+
+Go to backend folder: cd backend
+
+Install dependencies: npm install
+
+Create a .env file and add:
+
+Plaintext
+MONGO_URI=your_mongodb_connection_string
+PORT=8000
+Start the server: npm start
+
+Frontend Setup:
+
+Go to frontend folder: cd ../frontend
+
+Install dependencies: npm install
+
+Update API_BASE in App.jsx to http://localhost:8000/api/v1/user
+
+Start React app: npm run dev
+
+📝 Known Limitations
+Auth: Basic authentication is currently not implemented for write operations (PUT).
+
+Single Profile: The system is optimized for a single candidate profile management.
+
+👨‍💻 Candidate Details
+Name: Aftab khan
+
+Role: Full-Stack Developer (Intern Candidate)
+
+Education: B.Tech 3rd Year
+
+Resume: [Yahan apne Resume ka Google Drive link dalo]
+
+Final Check Points (For Recruiter):
+CORS Configured: Backend is set up to allow requests from the hosted frontend URL.
+
+Seeded Data: The database is pre-filled with real professional data.
+
+Clean Code: Using ES Modules (import/export) for modern JavaScript standards.
