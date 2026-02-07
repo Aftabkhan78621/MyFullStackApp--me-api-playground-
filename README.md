@@ -26,22 +26,22 @@ You can test the API using curl, Postman, or Thunder Client.
 GET /api/v1/user/health
 
 Purpose: To check if the server is live.
-
+https://myfullstackapp-me-api-playground-pqwo.onrender.com/api/v1/user/health
 Success Response: {"status": "UP", "message": "Server is healthy"}
 
 2. View Profile
 GET /api/v1/user/profile 
-
+ https://myfullstackapp-me-api-playground-pqwo.onrender.com/api/v1/user/profile
 Purpose: Fetches all candidate data including skills, projects, and social links.
 
 3. Search Projects by Skill
 GET /api/v1/user/projects?skill=React
-
+https://myfullstackapp-me-api-playground-pqwo.onrender.com/api/v1/user/profile?skill=react
 Purpose: Filters projects where the title or description contains the searched skill keyword.
 
 4. Update/Create Profile
 PUT /api/v1/user/updateProfile
-
+ https://myfullstackapp-me-api-playground-pqwo.onrender.com/api/v1/user/updateProfile
 Purpose: Updates existing profile or creates a new one if it doesn't exist (Upsert logic).
 
 🛠️ Local Setup Instructions
@@ -85,7 +85,7 @@ Role: Full-Stack Developer (Intern Candidate)
 
 Education: B.Tech 3rd Year
 
-Resume: [Yahan apne Resume ka Google Drive link dalo]
+Resume: [https://drive.google.com/file/d/1ZhTAhXeHrlgIHTr-k9RF-qgWeeBbrOLk/view?usp=drivesdk]
 
 Final Check Points (For Recruiter):
 CORS Configured: Backend is set up to allow requests from the hosted frontend URL.
@@ -93,5 +93,6 @@ CORS Configured: Backend is set up to allow requests from the hosted frontend UR
 Seeded Data: The database is pre-filled with real professional data.
 
 Clean Code: Using ES Modules (import/export) for modern JavaScript standards.
+
 
 
