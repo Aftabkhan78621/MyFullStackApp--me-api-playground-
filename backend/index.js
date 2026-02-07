@@ -9,8 +9,6 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
     origin: "*", // Testing phase ke liye sabse safe hai
@@ -18,6 +16,9 @@ app.use(
     credentials: true,
   }),
 );
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //  routing
 app.use("/api/v1/user", useRouter);
