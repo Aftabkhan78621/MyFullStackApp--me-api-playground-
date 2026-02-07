@@ -93,3 +93,4 @@ CORS Configured: Backend is set up to allow requests from the hosted frontend UR
 Seeded Data: The database is pre-filled with real professional data.
 
 Clean Code: Using ES Modules (import/export) for modern JavaScript standards.
+
