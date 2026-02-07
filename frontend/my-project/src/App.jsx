@@ -2,8 +2,9 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 // Backend URL (Deployment ke baad ise change karein)
-const API_BASE = "http://localhost:8000/api/v1/user";
-
+// Pehle: const API_BASE = "http://localhost:8000/api/v1/user";
+// Ab: 
+const API_BASE = "https://myfullstackapp-me-api-playground-pqwo.onrender.com/api/v1/user";
 const App = () => {
   const [profile, setProfile] = useState(null);
   const [projects, setProjects] = useState([]);
