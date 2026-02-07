@@ -2,11 +2,11 @@
 A professional full-stack (MERN) assessment project that exposes my profile and projects via a custom REST API and a responsive React frontend.
 
 🔗 Live Links
-Frontend (UI): [Yahan Vercel wala link dalo]
+Frontend (UI): [https://my-full-stack-app-me-api-playground-psi.vercel.app/]
 
-Backend (API): [Yahan Render wala link dalo]
+Backend (API): [https://myfullstackapp-me-api-playground-pqwo.onrender.com]
 
-GitHub Repository: [Yahan GitHub wala link dalo]
+GitHub Repository: [ https://github.com/Aftabkhan78621/MyFullStackApp--me-api-playground-.git]
 
 🏗️ Architecture & Tech Stack
 This project follows a Monorepo structure with a clear separation between Backend and Frontend.
@@ -48,7 +48,7 @@ Purpose: Updates existing profile or creates a new one if it doesn't exist (Upse
 Clone the repo:
 
 Bash
-git clone [APNA GITHUB REPO LINK DALO]
+git clone [ https://github.com/Aftabkhan78621/MyFullStackApp--me-api-playground-.git]
 cd me-api-playground
 Backend Setup:
 
@@ -93,4 +93,5 @@ CORS Configured: Backend is set up to allow requests from the hosted frontend UR
 Seeded Data: The database is pre-filled with real professional data.
 
 Clean Code: Using ES Modules (import/export) for modern JavaScript standards.
+
 
